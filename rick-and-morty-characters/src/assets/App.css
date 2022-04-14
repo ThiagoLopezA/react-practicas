@@ -1,0 +1,104 @@
+/*##### Fonts #####*/
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/*##### Colours ##### */
+:root{
+  --green : #8bcf21;
+  --white : #f3f3f3;
+  --grey : #e7e0db;
+  --black : #606060;
+  --death :  #dc1413;
+  --alive : #86dc3d;
+  --unknow : #909090;
+}
+
+*{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+
+body{
+  background-color : var(--grey);
+}
+
+a{
+  color : inherit;
+  text-decoration : none;
+}
+
+a:hover{
+  color: inherit;
+}
+
+/*##### Navbar CSS #####*/
+.navbar{
+  background-color : var(--green);
+  box-shadow : 1px 1px 10px rgba(20, 20, 20, .5); 
+}
+
+.navbar-brand{
+  color : var(--white);
+  text-transform : uppercase;
+  font-weight : bold;
+  font-family : Creepster;
+  font-size : 1.5rem;
+  text-shadow : 1px 1px 10px rgba(20, 20, 20, .5);
+}
+
+/*##### Card CSS #####*/
+.card{
+  transition: 500ms; 
+}
+.card:hover{
+  box-shadow : 1px 1px 10px rgba(20, 20, 100, .4);
+  transform: scale(1.05);
+}
+.card-body{
+  padding: .5rem 0;
+}
+.card-title{
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.dead {
+  color: var(--death);
+}
+.alive{
+  color: var(--alive);
+}
+.unknow{
+  color: var(--unknow)
+}
+.status-text{
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.fa-circle{
+  font-size: .7rem;
+}
+
+/*##### Spinner #####*/
+.spinner-border{
+  color: var(--green);
+}
+.spinner-wrapper{
+  height: 80vh;
+}
+
+/*##### Pagination #####*/
+
+.bg-green{
+  background-color: var(--green);
+  color: var(--white);
+  /*transition: 500ms;*/
+}
+
+.bg-green:hover{
+  color: rgba(243, 243, 243, .8);
+  background-color: rgba(139, 207, 33,.8);
+}
