@@ -1,0 +1,58 @@
+.article{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: auto;
+    justify-content: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .2rem;
+    position: relative;
+    transition: 500ms;
+    margin: 1.5rem 0;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+.article:hover{
+    transform: scale(1.015);
+    box-shadow: 0px 5px 10px rgba(100, 100, 100, 0.5);
+}
+.article__info{
+    grid-column: 1/10;
+}
+.info__title{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #303030;
+}
+.info__status{
+    margin-right: .5rem;
+    font-size: .9rem;
+}
+.info__status--important{
+    color: #bb2a2a;
+}
+.info__status--canWait{
+    color: rgb(224, 224, 70);
+}
+.info__status--dontWorry{
+    color: green;
+}
+.info__description{
+    color: #707070;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.article__close{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    top: 20%;
+}
+.close__image{
+    width: 2rem;
+    height: fit-content;
+}
+
